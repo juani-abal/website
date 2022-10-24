@@ -61,9 +61,13 @@ const List = styled.ul`
     background: #041F30;
     opacity: 0.95;
     padding-top: 50px;
-    margin-top:100px;
-    
-    
-}
-  
+    margin-top:100px; 
+  }
+
+  @media (min-width: 800px) and (max-width: 1350px) {
+    margin-top:120px;
+  }
+  @media (min-width: 1351px) and (max-width: 1500px) {
+    margin-top:120px;
+  }
 `;
