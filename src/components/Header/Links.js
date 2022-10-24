@@ -18,7 +18,7 @@ export default Links;
 
 const Item = styled.li`
 a{
-    color:white;
+    color:#FFFF;
     text-decoration: none;
     transition: .2s ease;
     &:hover { color: #CCCCCC;};
@@ -41,6 +41,7 @@ a{
   padding: 10px;
   border-bottom: 1px solid grey;
   &:hover {  background: rgba(255, 255, 255, 0.1);};
+  
   }
   
 `;
@@ -49,6 +50,8 @@ const List = styled.ul`
   list-style: none;
   width: 800px;
   justify-content: end;
+  margin-top:35px;
+  
   
   @media (max-width: 1500px) {
     justify-content: start;
@@ -58,6 +61,8 @@ const List = styled.ul`
     background: #041F30;
     opacity: 0.95;
     padding-top: 50px;
+    margin-top:100px;
+    
     
 }
   

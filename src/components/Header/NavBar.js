@@ -24,7 +24,7 @@ const Nav = styled.nav`
 
   @media (max-width: 1500px) {
     display:none;
-    color:red;
+    
   }
 `;
 

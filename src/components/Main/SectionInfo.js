@@ -34,13 +34,13 @@ const MainContainer = styled.div`
     height: 50vh;
     margin-bottom: 20px;
   }
+  @media (min-width: 800px) and (max-width: 1350px) {
+    height:60vh;
+
+  }
 `;
 const TextSection = styled.div`
-p{
-  padding-left:100px;
-  padding-right:100px;
-  
-}
+
   width: 50%;
   height: 70vh;
   background: #244e76;
@@ -53,6 +53,16 @@ p{
   font-style: italic;
   line-height: 1.6;
   font-size: 50px;
+
+  @media (min-width: 800px) and (max-width: 1350px) {
+    height:60vh;
+    font-size:230%;
+  }
+  p{
+    padding-left:100px;
+    padding-right:100px;
+    
+  }
   .bold {
     font-weight: 800;
   }
@@ -67,6 +77,9 @@ const Img = styled.img`
     margin-right: 0px;
     width: 100%;
   }
+  @media (min-width: 800px) and (max-width: 1350px) {
+    height:60vh;
+  }
 `;
 const ImgContent = styled.div`
   background: rgba(36, 78, 118, 0.6);
@@ -76,7 +89,16 @@ const ImgContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-right: 950px;
+  margin-right: 50%;
+  
+  @media (min-width: 800px) and (max-width: 1350px) {
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right:50%;
+  }
+
   @media (max-width: 800px) {
     .bold {
       font-weight: 800;
@@ -115,6 +137,10 @@ const Title = styled.span`
     margin-top: 80px;
     width: 100%;
     font-size: 50px;
+  }
+  @media (min-width: 800px) and (max-width: 1350px) {
+    font-size: 500%;
+    margin-left: 10%;
   }
 `;
 

@@ -18,7 +18,7 @@ const Home = () => {
 const MainTitleContainer = styled.div`
   position: absolute;
   z-index: 0;
-  margin-top: 200px;
+  margin-top: 250px;
   width: 1200px;
   height: 370px;
   background: rgba(255, 255, 255, 0.4);
@@ -29,6 +29,12 @@ const MainTitleContainer = styled.div`
     width: 90%;
     height:40vh;
     margin-top:170px;
+  }
+  @media (min-width: 454px) and (max-width: 800px) {
+    padding-top:10%;
+    width:90%;
+    height:25%;
+
   }
   
 `;
@@ -45,6 +51,7 @@ const TitleContainer = styled.div`
     justify-content:center;
     align-items:center;
   }
+
 `;
 const Title = styled.h1`
   font-family: "Source Serif Pro", serif;
@@ -61,6 +68,14 @@ const Title = styled.h1`
     justify-content:center;
     width:110%;
     border-bottom:0px;
+  }
+  @media (min-width: 454px) and (max-width: 800px) {
+    border-bottom: 3px solid;
+    width: 95%;
+    height:15%;
+    font-size:250%;
+    margin-top:-30%;
+    
     
   }
 `;
@@ -72,7 +87,7 @@ const SubTitle = styled.h2`
   position: absolute;
   margin-left: 150px;
   margin-top: 20px;
-  border-bottom: thick solid;
+  
   @media (max-width: 800px) {
     font-size: 30px;
     position:relative;
@@ -82,7 +97,14 @@ const SubTitle = styled.h2`
     display:flex;
     flex-direction:column;
     text-align:center;
-
+  }
+  @media (min-width: 454px) and (max-width: 800px) {
+    width: 90%;
+    height:15%;
+    font-size:200%;
+    margin-top:5%;
+    
+    
   }
 `;
 const Text = styled.div`

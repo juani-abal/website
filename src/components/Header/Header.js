@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import NavBar from "../Header/NavBar";
-import logo from '../Img/logo.png'
+import logojpg from '../Img/logojpg.jpg'
 import NavBarMobile from "./NavBarMobile";
 
 
@@ -8,7 +8,7 @@ const Header = () => {
      return (
         <Container>
             <ImgContainer>
-            <Title>AGUIRRE & DE BIASE</Title>
+            <img src={logojpg}></img>
             </ImgContainer>
             <NavBar/>
             <NavBarMobile />
@@ -17,19 +17,31 @@ const Header = () => {
 }
 
 const Container = styled.div`
-height: 70px;
+height: 120px;
 width: 100%;
-background: #244E76;
+background: #244e76;
 display: flex;
 flex-direction:row;
 position: fixed;
 z-index: 100;
-border-bottom:1px solid #BDBEBB;
+border-bottom:1px solid grey;
+@media (max-width: 800px){
+    height:100px;
+}
 `
 const ImgContainer = styled.div`
 width: 500px;
 display: flex;
-justify-content: center;
+
+img{
+    width:350px;
+    height:120px;
+    @media (max-width: 800px){
+        width:60%;
+        height:100px;
+        
+    }
+}
 
 `
 const Img = styled.img`

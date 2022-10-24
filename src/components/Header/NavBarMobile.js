@@ -25,13 +25,13 @@ export default NavBarMobile;
 const Nav = styled.nav`
   .burguerBtn {
     font-size: 50px;
-    color: white;
+    color: #FFFF;
     position: absolute;
     right: 30px;
     top:10px;
     cursor: pointer;
     @media (max-width: 1500px) {
-      font-size: 40px;
+      font-size: 60px;
       top: 15px;
     }
   }
@@ -48,6 +48,7 @@ const Nav = styled.nav`
     font-family: "Source Serif Pro", serif;
     margin-right: 20px;
     transition:.4s ease;
+    
 
    
   }

@@ -17,7 +17,7 @@ const SectionInfo2 = () => {
       </TextSection>
       <Img src={quienessomos}></Img>
       <ImgContent>
-        <Title>¿QUIENES SOMOS?</Title>
+        <Title className="title">¿QUIENES SOMOS?</Title>
       </ImgContent>
     </MainContainer>
   );
@@ -32,8 +32,12 @@ const MainContainer = styled.div`
   background: white;
   @media (max-width: 800px) {
   }
+  @media (min-width: 800px) and (max-width: 1150px) {
+    height:50vh;
+  }
 `;
 const TextSection = styled.div`
+
   width: 50%;
   height: 70vh;
   background: #244e76;
@@ -42,7 +46,9 @@ const TextSection = styled.div`
   text-align: center;
   align-items: center;
   justify-content: center;
-
+  @media (min-width: 800px) and (max-width: 1150px) {
+    height:50vh;
+  }
   p {
     font-family: "Source Serif Pro";
     color: white;
@@ -52,6 +58,10 @@ const TextSection = styled.div`
     font-style: italic;
     margin-bottom:100px;
     padding-top:;
+    @media (min-width: 800px) and (max-width: 1150px) {
+      font-size: 30px;
+      
+    }
   }
 
   @media (min-width: 800px) {
@@ -77,13 +87,17 @@ const TextSection = styled.div`
     width: 100%;
     flex-direction: column;
   }
+  
 `;
 const Img = styled.img`
   width: 50%;
-  height: 70vh;
+  height: 60vh;
   @media (max-width: 800px) {
     margin-left: 0;
     display: none;
+  }
+  @media (min-width: 800px) and (max-width: 1150px)  {
+    height:50vh;
   }
 `;
 const ImgContent = styled.div`
@@ -93,11 +107,25 @@ const ImgContent = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  margin-left: 950px;
+  align-items: start;
+  margin-left: 50%;
   @media (max-width: 800px) {
     margin-left: 0;
     display: none;
+   
+  }
+  @media (min-width: 800px) and (max-width: 1150px)  {
+   margin-left:50%; 
+   display:flex;
+   justify-content:center;
+   height:50vh;
+   
+   .title{
+    margin-right:100px;
+    padding-left:100px;
+    margin-bottom:400px;
+    font-size:50px;
+   }
   }
 `;
 const Title = styled.span`
@@ -108,7 +136,7 @@ const Title = styled.span`
   color: white;
   letter-spacing: 5px;
   font-size: 80px;
-  margin-right: 670px;
+  margin-left:50px ;
   margin-top: 100px;
   line-height: 1.2;
 `;
